@@ -1,0 +1,36 @@
+#HowItWorks {
+    display: flex;
+    flex-direction: column;
+    
+    .body {
+        display: flex;
+        align-items: center;
+        padding-inline: 10vw;
+        min-height: 78vh;
+        background-color: transparentize($color: #000000, $amount: 0.2);
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            h1 {
+                font-size: 2.5rem;
+                color: yellow;
+
+            }
+
+            p {
+                width: 85%;
+                font-size: 1.2rem;
+                color: transparentize($color: #000000, $amount: 0.4);
+            }
+        }
+
+        img {
+            width: 50%;
+            max-height: 75vh;
+
+        }
+    }
+}

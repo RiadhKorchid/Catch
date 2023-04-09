@@ -1,0 +1,31 @@
+#Downloads{
+    .body{
+        background-color: transparentize($color: #000000, $amount: 0.2);
+        min-height: 78vh;
+        padding-inline: 10vw;
+        .container{
+            display: flex;
+            gap: 2rem;
+            button{
+                width: 50%;
+                border-radius: 1rem;
+                border:1px solid ;
+                background-color:#333333;
+                color: yellow;
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 0.5rem;
+                &:hover{
+                    background-color: yellow;
+                    color: black;
+                    border: black solid 1px;
+                    transition: 0.5s;
+                    cursor: pointer;
+                }
+            }
+  
+        }
+        
+    } 
+
+}

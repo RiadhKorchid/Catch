@@ -1,0 +1,56 @@
+nav{
+    display: flex;
+    min-height: 10vh;
+    align-items: center;
+    gap: 2.5rem;
+    padding-inline: 10vw;
+    background-color: transparentize($color: #000000, $amount: 0.2);
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    box-shadow: 1px 1px 10px rgba($color: #000000, $alpha: 0.5);
+    img{
+    height: 10vh;
+    }
+    ul{
+        display: flex;
+        gap: 1rem;
+        li {
+            cursor: pointer; 
+            position: relative;
+            color: yellow;
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: yellow;
+                height: 2px;
+                width: 100%;
+                scale: 0;
+                transition: 0.5s;
+                bottom: -5px;
+                left: 0px;
+                border-radius: 2px;
+
+            }
+
+            &:hover {
+                &::after {
+                    scale: 1;
+                    transition: 0.7s;
+
+                }
+            }
+        }
+        a{
+            font-size: 1rem;
+            text-decoration: none;
+            color: yellow;
+            font-weight: 500;
+            position: relative;
+
+  
+
+        }
+    }
+
+}

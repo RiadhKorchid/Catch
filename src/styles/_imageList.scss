@@ -1,0 +1,44 @@
+#ImageList{
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+    .top{
+        display: flex;
+        align-items: center;
+        background-color: transparentize($color: #000000, $amount: 0.2);
+       
+        img{
+            height: 60vh;
+            width: 75%;
+        }
+        h1{
+            text-align: center;
+            font-size: 1.5rem;
+            background-color: yellow;
+            min-height: 15vh;
+            display: flex;
+            align-items: center;
+            
+        }
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        height: 60vh;
+        background-color: transparentize($color: #000000, $amount: 0.2);
+        img{
+            height: 100%;
+            width: 75%;
+        }
+        h1{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            background-color: yellow;
+            min-height: 15vh;
+            
+        }
+    }
+}
