@@ -2,6 +2,7 @@ nav{
     display: flex;
     min-height: 10vh;
     align-items: center;
+    justify-content: space-between;
     gap: 2.5rem;
     padding-inline: 10vw;
     background-color: transparentize($color: #000000, $amount: 0.2);
@@ -42,7 +43,7 @@ nav{
             }
         }
         a{
-            font-size: 1rem;
+            font-size: 0.8rem;
             text-decoration: none;
             color: yellow;
             font-weight: 500;

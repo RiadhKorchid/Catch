@@ -2,11 +2,11 @@ import Navbar from "./components/Navbar"
 import Home from "./components/Home"
 import Footer from "./components/footer"
 import HowItWork from "./components/HowItWork"
-import About from "./components/About"
+import WhyChooseUs from "./components/About"
 import Downloads from "./components/Downloads"
 import ImageList from "./components/ImageList"
-
-function App() {
+import Contacts from "./components/Contacts"
+ function App() {
 
   return (<>
         <Navbar/>
@@ -14,11 +14,12 @@ function App() {
         <ImageList/>
         <Downloads/>
         <HowItWork/>
-        <About/>
+       <WhyChooseUs/>
+       <Contacts/>
         <Footer/>
 
   </>
   )
 }
 
-export default App
+export default App;

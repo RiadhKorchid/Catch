@@ -2,10 +2,16 @@
     .body{
         background-color: transparentize($color: #000000, $amount: 0.2);
         min-height: 78vh;
-        padding-inline: 10vw;
+        padding: 1rem 10vw ;
         .container{
             display: flex;
             gap: 2rem;
+            .Active{
+                background-color: yellow;
+                color: black;
+                transition: 1s;
+                cursor: pointer;
+            }
             button{
                 width: 50%;
                 border-radius: 1rem;
@@ -15,17 +21,62 @@
                 font-size: 1rem;
                 font-weight: 600;
                 padding: 0.5rem;
-                &:hover{
-                    background-color: yellow;
-                    color: black;
-                    border: black solid 1px;
-                    transition: 0.5s;
-                    cursor: pointer;
-                }
+                transition: 0.5s;
+                cursor: pointer;
+             
             }
   
         }
+        .show{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding-block: 2rem;
         
+         .left {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            h1{
+                color: yellow;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            h2{
+                text-decoration: underline;
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+            p{
+                width: 80%;
+                line-height: 1.5rem;
+                font-weight: 400;
+                color: transparentize($color: white, $amount: 0.4);
+            }
+            .links{
+                display: flex;
+                align-items: center;
+                gap: 0.7rem;
+                img{
+                   max-width: 20%;
+                   margin-top: -2.5rem;
+                }
+            }
+         }
+         .right{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            img{
+                height: 70vh ;
+            }
+         }
+           
+        }
     } 
 
 }

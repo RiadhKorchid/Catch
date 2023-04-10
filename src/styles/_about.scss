@@ -1,7 +1,6 @@
 #About{
     display: flex;
     flex-direction: column;  
-   
     .body{ 
     display: flex;
     align-items: center;
@@ -33,7 +32,7 @@
             font-size: 1.3rem;
         }
         p{
-        
+            color: #333333;
             font-weight: 400;
             width:80%;
             line-height: 1.3rem;
