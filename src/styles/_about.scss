@@ -43,3 +43,15 @@
 
     
 }}
+@media (max-width:768px){
+    #About{
+        
+        .body{
+            flex-direction: column;
+            padding: 2rem;
+            .container{
+            width: 100%;
+
+            }
+    }}
+}

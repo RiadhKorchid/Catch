@@ -4,17 +4,22 @@ import {MdEmail}from "react-icons/md"
 import{MdLocationOn}from "react-icons/md"
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Alert , Snackbar } from "@mui/material";
+import { useState } from "react";
 export default function () {
- 
+  const [succes,setSucces]= useState(false) 
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_lrzlsnp', 'template_4vw7rg9', form.current, '9NZpgePs2LVkQKYJe')
       .then((result) => {
+          setSucces(true)  
           console.log(result.text);
+         
       }, (error) => {
           console.log(error.text);
+          setSucces(false)
       });
   };
 
@@ -42,6 +47,11 @@ export default function () {
             <MdLocationOn className="icon"/><p>Midoun, Djerba Médenine Tunisie</p>
         </div>
 </div>
+<Snackbar open={succes} autoHideDuration={6000} onClose={()=>setSucces(false)} >
+                <Alert variant="filled" severity="success"  sx={{ width: '100%' }}>
+                  message envoyée avec succès
+                </Alert>
+              </Snackbar>
     </section>
     )
 }

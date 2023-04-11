@@ -88,4 +88,14 @@ footer{
     display: inline-flex;
     opacity: 1;
   }
+@media(max-width:768px){
+footer{
+  .why_container{
+    flex-direction: column;
+  }
+  p{
+    width:100%;
+  }
+}
+}
   
